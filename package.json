@@ -1,0 +1,33 @@
+{
+  "name": "blossom",
+  "version": "0.0.0",
+  "description": "A wiki-like application for sharing urls",
+  "main": "server.coffee",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nerdenough/blossom.git"
+  },
+  "author": {
+    "name": "Brendan Goodenough",
+    "email": "brendan@goodenough.nz",
+    "url": "https://www.goodenough.nz"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nerdenough/blossom/issues"
+  },
+  "homepage": "https://github.com/nerdenough/blossom#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "morgan": "^1.7.0",
+    "node-mysql": "^0.4.2",
+    "node-sass-middleware": "^0.9.8",
+    "pug": "^2.0.0-alpha1"
+  }
+}
