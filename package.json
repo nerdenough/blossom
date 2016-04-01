@@ -4,6 +4,7 @@
   "description": "A wiki-like application for sharing urls",
   "main": "server.coffee",
   "scripts": {
+    "start": "nodemon server.coffee",
     "test": "gulp test"
   },
   "repository": {
