@@ -1,7 +1,7 @@
 extends ./shared/layout
 
 block content
-  nav.navbar.navbar-inverse.navbar-fixed-top
+  nav.navbar.navbar-default.navbar-fixed-top
     .container-fluid
       .navbar-header
         button.navbar-toggle(type='button' data-toggle='collapse' data-target='#navbar')
@@ -20,8 +20,18 @@ block content
                 a(href='#') Hot
               li
                 a(href='#') New
+        .col-sm-3.col-md-3
+          form.navbar-form(role='search')
+            .input-group
+              input.form-control(type='text' placeholder='Search' name='q')
+              .input-group-btn
+                button.btn.btn-default(type='submit')
+                  span.glyphicon.glyphicon-search
         ul.nav.navbar-nav.navbar-right
-          li
-            a(href='#') #[span.glyphicon.glyphicon-user] Sign Up
-          li
-            a(href='#') #[span.glyphicon.glyphicon-log-in] Login
+          li.dropdown
+            a.dropdown-toggle(data-toggle='dropdown' href='#') Account #[span.caret]
+            ul.dropdown-menu
+              li
+                a(href='#') Sign Up
+              li
+                a(href='#') Login
