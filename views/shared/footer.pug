@@ -1,0 +1,14 @@
+footer.footer
+  .container
+    .social
+      if config.social.youtube.length
+        a(href=config.social.youtube target='_blank') #[i.fa.fa-youtube]
+      if config.social.twitter.length
+        a(href=config.social.twitter target='_blank') #[i.fa.fa-twitter]
+      if config.social.googleplus.length
+        a(href=config.social.googleplus target='_blank') #[i.fa.fa-google-plus]
+      if config.social.facebook.length
+        a(href=config.social.facebook target='_blank') #[i.fa.fa-facebook-official]
+      if config.social.github.length
+        a(href=config.social.github target='_blank') #[i.fa.fa-github]
+    p.right.text-muted Powered by #[a(href='https://github.com/nerdenough/blossom' target='_blank') Blossom]

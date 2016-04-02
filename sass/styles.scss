@@ -1,0 +1,34 @@
+body > .container {
+  padding-top: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  background: #f8f8f8;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  border-top: 1px solid #e7e7e7;
+
+  .social {
+    float: left;
+    font-size: 24px;
+
+    a {
+      margin-right: 5px;
+    }
+  }
+
+  .right {
+    float: right;
+  }
+
+  a {
+    color: #808080;
+  }
+
+  a:hover {
+    color: #606060;
+  }
+}

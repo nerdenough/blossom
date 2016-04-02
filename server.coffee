@@ -6,6 +6,7 @@ cookieParser = require 'cookie-parser'
 sass = require 'node-sass-middleware'
 logger = require 'morgan'
 
+config = require './config'
 index = require './routes/index'
 
 # Server setup
@@ -28,6 +29,10 @@ app.use sass
   prefix: '/css'
 
 app.use express.static path.join(__dirname, 'public')
+
+app.get '/', (req, res, next) ->
+  req.config = config
+  next()
 
 # Define routes
 app.use '/', index

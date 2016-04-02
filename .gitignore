@@ -34,3 +34,6 @@ node_modules
 
 # Compiled CSS
 public/css
+
+# Config
+config.coffee
