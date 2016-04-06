@@ -1,0 +1,15 @@
+@import 'modules/all';
+
+// Colour scheme
+$theme-color: $light-grey;
+$highlight-color: $pink;
+
+// Font weights
+$light: 300;
+$regular: 400;
+$bold: 700;
+
+// Fonts
+$base-font-family: 'Roboto', Helvetica, Arial, sans-serif;
+$base-font-size: 14px;
+$base-font-weight: $regular;
